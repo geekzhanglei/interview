@@ -1,0 +1,39 @@
+<!--
+ * @Author: zhanglei
+ * @Date: 2021-10-26 19:27:26
+ * @LastEditors: zhanglei
+ * @LastEditTime: 2021-10-26 19:46:44
+ * @Description: 半圆旋转（要求编写半圆旋转的loading动画，要求1s一圈匀速不间断旋转。）
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>半圆旋转</title>
+    <style>
+        .circle {
+            /*宽高50块元素*/
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            /*相邻边框不同色*/
+            border-bottom: 30px solid transparent;
+            border-top: 30px solid transparent;
+            border-right: 30px solid #333333;
+            border-left: 30px solid #333333;
+            /*输入不同圆角半径值测试效果，注意临界值“width一半+边框厚度”*/
+            border-radius: 55px;
+            animation: round 1s infinite linear;
+        }
+        @keyframes round {
+            0% {transform: rotate(0deg)}
+            100% {transform: rotate(360deg)}
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>

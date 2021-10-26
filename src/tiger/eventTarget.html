@@ -1,0 +1,21 @@
+<!--
+ * @Author: zhanglei
+ * @Date: 2021-10-26 17:02:44
+ * @LastEditors: zhanglei
+ * @LastEditTime: 2021-10-26 17:03:45
+ * @Description: event.target和event.currentTarget的区别
+-->
+<div id="app">
+    <div class="outer" onclick="inner(event)">最外层
+        <div class="middle">中间
+            <div class="inner">最内层点击我(^_^)</div>
+        </div>
+    </div>
+    <p></p>
+</div>
+
+<script type="text/javascript">
+    function inner(event) {
+        console.log('currentTarget是当前绑定事件元素，target是触发事件的源头：', 'current=', event.currentTarget, 'target=', event.target, '是否相等', event.target === event.currentTarget)
+    }
+</script>
