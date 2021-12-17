@@ -10,3 +10,4 @@
 | 滴滴 | src/didi
 | 脉脉 | src/maimai
 | 蓝湖 | src/lanhu
+| 京东 | src/jingdong
